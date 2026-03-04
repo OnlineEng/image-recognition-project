@@ -1,0 +1,15 @@
+images,labels
+data/images/img_018.jpg,data/labels/train/img_018.txt
+data/images/img_010.jpg,data/labels/train/img_010.txt
+data/images/img_013.jpg,data/labels/train/img_013.txt
+data/images/img_008.jpg,data/labels/train/img_008.txt
+data/images/img_020.jpg,data/labels/train/img_020.txt
+data/images/img_011.jpg,data/labels/train/img_011.txt
+data/images/img_004.jpg,data/labels/train/img_004.txt
+data/images/img_002.jpg,data/labels/train/img_002.txt
+data/images/img_006.jpg,data/labels/train/img_006.txt
+data/images/img_003.jpg,data/labels/train/img_003.txt
+data/images/img_005.jpg,data/labels/train/img_005.txt
+data/images/img_017.jpg,data/labels/train/img_017.txt
+data/images/img_012.jpg,data/labels/train/img_012.txt
+data/images/img_001.jpg,data/labels/train/img_001.txt
