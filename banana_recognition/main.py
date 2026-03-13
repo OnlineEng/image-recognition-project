@@ -28,7 +28,7 @@ def main():
 
     # images, targets = next(iter(train_loader))
     
-    # 4. Initialising the 
+    # 4. Initialising the model
     model = build_model(args.backbone)
 
 
