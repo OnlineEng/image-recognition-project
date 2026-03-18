@@ -5,6 +5,8 @@ def get_args():
 
     parser.add_argument('--backbone', type=str, default='fasterrcnn_resnet50_fpn',
                         options=['fasterrcnn_resnet50_fpn','fasterrcnn_mobilenet_v3'])
+
+    parser.add_argument('--num_classes', type=int, default=1)
     
     parser.add_argument('--csv_dir', type=str, default='banana_recognition/data/CSVs')
     parser.add_argument('--out_dir', type=str, default='./sessions')
