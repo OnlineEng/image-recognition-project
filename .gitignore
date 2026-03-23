@@ -219,3 +219,5 @@ __marimo__/
 banana_recognition/data/images/*.jpg
 banana_recognition/data/images/*.png
 banana_recognition/data/images/*.jpeg
+banana_recognition/__pycache__/args.cpython-312.pyc
+banana_recognition/__pycache__/dataset.cpython-312.pyc
