@@ -2,7 +2,7 @@ from args import get_args
 import os
 import torch
 import torch.optim as optim
-from utils import show_batch
+# from utils import show_batch
 
 
 def train_model(model, train_loader, val_loader, device):
@@ -25,7 +25,7 @@ def train_model(model, train_loader, val_loader, device):
                 for target in targets
             ]
             
-            show_batch(images, targets)
+            # show_batch(images, targets)
             optimizer.zero_grad()
 
             loss_dict = model(images, targets)

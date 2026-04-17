@@ -4,11 +4,18 @@ from torchvision.transforms.functional import to_tensor
 import os
 from args import get_args
 from utils import resize_box_xyxy
+import augmentations as aug
 
 class ObjDetectionDataset(torch.utils.data.Dataset):
     
-    def __init__(self, df):
+    def __init__(self, df, transform=None):
         self.df = df.reset_index(drop=True)
+
+        if transform is None:
+            self.transform = aug.NoTransform()
+
+        else:
+            self.transform = aug.Compose(transform)
 
     def __len__(self):
         return len(self.df)
@@ -46,7 +53,13 @@ class ObjDetectionDataset(torch.utils.data.Dataset):
             "labels": torch.tensor(labels, dtype=torch.int64),
             "image_id": torch.tensor([idx]),
         }
-        # TODO 2: Return what you need from this class
-        # your code here
+        
+        # Apply augmentations
+        image, target = self.transform(image, target)
+
+        # Force clean memory allocation for all tensors before yielding to DataLoader
+        image = image.clone()
+        target["boxes"] = target["boxes"].clone()
+        target["labels"] = target["labels"].clone()
 
         return image, target
