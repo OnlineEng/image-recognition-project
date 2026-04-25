@@ -219,5 +219,15 @@ __marimo__/
 banana_recognition/data/images/*.jpg
 banana_recognition/data/images/*.png
 banana_recognition/data/images/*.jpeg
+banana_recognition/data/test_images/*.jpg
+banana_recognition/data/test_images/*.jpeg
+banana_recognition/data/test_images/*.png
+banana_recognition/data/test_images/predictions/
+
+/image-recognition-project/learning_curve.png
+/learning_curve.png
+sessions/*.pth
+learning_curve.png
+
 __pycache__/
 *.pyc
